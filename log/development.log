@@ -1,0 +1,3098 @@
+Started GET "/" for ::1 at 2019-08-22 14:04:56 +0700
+  
+Mysql2::Error::ConnectionError (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-22 14:06:56 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 28ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-22 15:13:46 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 08:01:35 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 08:01:36 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 08:01:36 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 08:01:42 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:41:16 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:41:17 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:41:18 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:41:27 +0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:41:28 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:41:30 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:43:39 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (17.0ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:43:39 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:43:41 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 09:43:42 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 09:52:02 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2127ms (Views: 2126.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 09:54:10 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/" for ::1 at 2019-08-23 10:18:34 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user/action" for ::1 at 2019-08-23 10:18:45 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 10:34:08 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 10:39:20 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 10:53:45 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action?p=5" for ::1 at 2019-08-23 10:53:54 +0700
+Processing by UserController#action as HTML
+  Parameters: {"p"=>"5"}
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action?p=5" for ::1 at 2019-08-23 10:54:00 +0700
+Processing by UserController#action as HTML
+  Parameters: {"p"=>"5"}
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 11:03:15 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 11:07:14 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 11:07:15 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 11:07:15 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 11:07:15 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 11:07:15 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 11:07:16 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:29:00 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 13:29:06 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 13:31:08 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 13:45:44 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:45:47 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:45:48 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 13:50:19 +0700
+Processing by UserController#action as HTML
+  Rendering user/action.html.erb within layouts/application
+  Rendered user/action.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:50:21 +0700
+  
+AbstractController::ActionNotFound (The action 'hello' could not be found for ApplicationController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-23 13:52:06 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:52:10 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:52:15 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:52:16 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 13:55:08 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 14:21:53 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 14:21:54 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 14:21:54 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 14:21:54 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 15:31:19 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-23 15:31:22 +0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-23 15:31:23 +0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-23 15:31:24 +0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (249.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (273.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7280963435397412950', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20190823082922)
+  [1m[35m (272.7ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `password` varchar(255), `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190823082922_create_users.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190823082922')[0m
+  ↳ bin/rails:4
+  [1m[35m (29.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-08-23 08:32:00', '2019-08-23 08:32:00')[0m
+  ↳ bin/rails:4
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7280963435397412950')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for ::1 at 2019-08-23 15:32:13 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 15:32:15 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 15:35:17 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 295ms (Views: 290.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2019-08-23 15:35:24 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (271.9ms)
+  Rendered users/new.html.erb within layouts/application (273.4ms)
+Completed 200 OK in 307ms (Views: 298.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for ::1 at 2019-08-23 15:36:05 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ccYsbG8KW7r5en3X128TAY58BBx/I0wTPY3OIrY8/ntWz3lLZl9ugMFgQ6X3Hivtqf0P1ul1HahYapQm2juVnw==", "user"=>{"username"=>"tvlam97", "password"=>"[FILTERED]", "name"=>"truong van lam", "email"=>"truongvanlam1997@gmail.com"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password`, `name`, `email`, `created_at`, `updated_at`) VALUES ('tvlam97', 'tvl0543857718', 'truong van lam', 'truongvanlam1997@gmail.com', '2019-08-23 08:36:05', '2019-08-23 08:36:05')[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (99.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 107ms (ActiveRecord: 100.0ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:36:05 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 28.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2019-08-23 15:38:22 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.8ms)
+  Rendered users/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:38:29 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2019-08-23 15:42:38 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.2ms)
+  Rendered users/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:44:55 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2019-08-23 15:44:59 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.0ms)
+  Rendered users/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 76ms (Views: 71.9ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/1" for ::1 at 2019-08-23 15:45:05 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"99kgGMK0Fh8DQrvPGFMNmF2OWDVKxYVCLEsrm5OT/9LgZmprxbkjBoVtUrFiTE5icYx6YsFcVZ37SBQntua22w==", "user"=>{"username"=>"tvlam97", "password"=>"[FILTERED]", "name"=>"truong van lam", "email"=>"truongvanlam1997@gmail.com"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:44
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE `users` SET `password` = '12345678', `updated_at` = '2019-08-23 08:45:05' WHERE `users`.`id` = 1[0m
+  ↳ app/controllers/users_controller.rb:44
+  [1m[35m (59.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:44
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 68ms (ActiveRecord: 61.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:45:05 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:51:46 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:51:47 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:51:48 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:51:49 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:52:00 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 15:52:01 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 15:52:04 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 15:52:19 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 15:52:47 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 15:52:49 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 15:59:07 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 15:59:12 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 15:59:50 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:01:00 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:01:20 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:01:29 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:01:34 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:02:14 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:03:40 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:03:59 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:04:11 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:04:18 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:05:25 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:05:26 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:05:30 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:05:31 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:05:37 +0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/action" for ::1 at 2019-08-23 16:05:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/user/action"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-08-23 16:05:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-08-23 16:06:13 +0700
+  
+ArgumentError (must be called with a path and/or options):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users" for ::1 at 2019-08-23 16:06:24 +0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users" for ::1 at 2019-08-23 16:06:38 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:06:43 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:06:45 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:06:46 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:06:46 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:08:52 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:10:48 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2019-08-23 16:11:02 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:11:04 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 16:11:18 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2019-08-23 16:11:20 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/1" for ::1 at 2019-08-23 16:11:22 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2CaeW7zRqSRHCGTSeqG3TrS//zuyIyAEFXbAUtEO1RI39AKaf5zvRczyO0z9cUnFtDdq2VRXF/HVuS9bjFyXQ==", "user"=>{"username"=>"tvlam97", "password"=>"[FILTERED]", "name"=>"truong van lam", "email"=>"truongvanlam1997@gmail.com"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:44
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 16:11:22 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-23 16:11:30 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:11:32 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:14:29 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tvlam/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:14:44 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:25:30 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 08:58:50 +0700
+  [1m[35m (33.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 553ms (Views: 493.0ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-08-26 08:59:36 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 75ms (Views: 32.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 08:59:39 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:34:07 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc9017efb8>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:34:26 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc8c13d4e0>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:34:34 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc88a0a860>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:38:49 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc8c1cea08>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:38:50 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc9805e1d0>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:43:05 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc88bebf58>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:43:15 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc89a3c850>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:43:16 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc89bd2e30>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:43:24 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `var_dump' for #<UsersController:0x00007fbc9003bf20>):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:43:36 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `var_dump' for #<UsersController:0x00007fbc89dd3130>):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:44:33 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc89a567a0>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:44:34 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:4
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fbc89b9ba70>
+Did you mean?  @users):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:44:51 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 70ms (Views: 52.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:44:55 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:44:58 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:45:14 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 1.6ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `print_r' for #<UsersController:0x00007fbc84062b18>
+Did you mean?  print
+               printf):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:45:20 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 48ms (Views: 34.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:45:21 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:45:40 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 1.4ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `var_dump' for #<UsersController:0x00007fbc90064fb0>):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:45:50 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 1.3ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `var_dump' for #<UsersController:0x00007fbc840963f0>):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:46:15 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.9ms)
+
+
+  
+SystemExit (#<ActiveRecord::Relation [#<User id: 1, username: "tvlam97", password: "12345678", name: "truong van lam", email: "truongvanlam1997@gmail.com", created_at: "2019-08-23 08:36:05", updated_at: "2019-08-23 08:45:05">]>):
+  
+app/controllers/users_controller.rb:9:in `abort'
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:47:34 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 58ms (Views: 39.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:47:35 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:47:35 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:47:36 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:47:36 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 63ms (Views: 59.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:47:36 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:47:36 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:47:36 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:49:11 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 1.4ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `debug' for #<UsersController:0x00007fbc9000ca68>
+Did you mean?  debugger):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:49:22 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `debug' for #<UsersController:0x00007fbc9c03f3f8>
+Did you mean?  debugger):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:49:48 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `debug' for #<UsersController:0x00007fbc89bb7ef0>
+Did you mean?  debugger):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:49:49 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `debug' for #<UsersController:0x00007fbc88b749d0>
+Did you mean?  debugger):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:49:50 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `debug' for #<UsersController:0x00007fbc90386388>
+Did you mean?  debugger):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2019-08-26 09:49:59 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:55:16 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered users/index.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `yaml' for #<User::ActiveRecord_Relation:0x000055646934d258>):
+    3: <h1>Users</h1>
+    4: 
+    5: 
+    6: <%= simple_format @users.yaml %>
+    7: <table class="table">
+    8:   <thead>
+    9:     <tr>
+  
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___3587711126831202275_46944875136560'
+Started GET "/" for ::1 at 2019-08-26 09:55:43 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 260ms (Views: 257.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:56:46 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed   in 122599ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:59:01 +0700
+  [1m[35m (1.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 266ms (Views: 250.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 09:59:09 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 74546ms (Views: 41.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 10:00:51 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 41ms (Views: 34.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 10:00:52 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 10:00:52 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 10:00:53 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 10:01:38 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 10:01:47 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 227ms (Views: 217.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/new" for ::1 at 2019-08-26 10:18:16 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (112.2ms)
+  Rendered users/new.html.erb within layouts/application (114.1ms)
+Completed 200 OK in 169ms (Views: 141.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for ::1 at 2019-08-26 10:18:31 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2pQoo/0dPIsBMuYaG8aY4FeZLviedeysRYLaTxgWoVAYwWFhqFByBQe9epIHiKPpt9vcXQvhgnU8VFtUGcxYQ==", "user"=>{"username"=>"test nek", "password"=>"[FILTERED]", "name"=>"lam lam", "email"=>"adsadasd@gmail.com"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:33
+  [1m[36mUser Create (22.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password`, `name`, `email`, `created_at`, `updated_at`) VALUES ('test nek', '132562666', 'lam lam', 'adsadasd@gmail.com', '2019-08-26 03:18:31', '2019-08-26 03:18:31')[0m
+  ↳ app/controllers/users_controller.rb:33
+  [1m[35m (46.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:33
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 75ms (ActiveRecord: 69.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-08-26 10:18:31 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 54ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-08-26 10:18:37 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 10:18:40 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/2" for ::1 at 2019-08-26 10:18:54 +0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TvN3lYLZmg7GQS4ZxGV4zDYjVjHBzq+yPd/3E1tN3d/3WPrOSZha99Qt1ikZpN8R4PDTLm0FWGceGstmEu5EVg==", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:60
+  [1m[36mUser Destroy (11.9ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/users_controller.rb:60
+  [1m[35m (106.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:60
+Redirected to http://localhost:3000/users
+Completed 302 Found in 123ms (ActiveRecord: 119.1ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 10:18:54 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 10:18:59 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2019-08-26 10:19:25 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-08-26 10:19:45 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fl3hlO85vYCswC25021gY2kn0pNJ17YsKWYGy+hHoOwxVLSz5myIupTaE8vzHFiPTqbZWd+B55dMgVzPhEDLCA==", "user"=>{"username"=>"test 1", "password"=>"[FILTERED]", "name"=>"nguyễn văn test 1", "email"=>"test1@gmail.com"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:33
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password`, `name`, `email`, `created_at`, `updated_at`) VALUES ('test 1', '592356236', 'nguyễn văn test 1', 'test1@gmail.com', '2019-08-26 03:19:45', '2019-08-26 03:19:45')[0m
+  ↳ app/controllers/users_controller.rb:33
+  [1m[35m (77.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:33
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 82ms (ActiveRecord: 77.8ms)
+
+
+Started GET "/users/3" for ::1 at 2019-08-26 10:19:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/" for ::1 at 2019-08-26 10:19:50 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7280963435397412950', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateMicroposts (20190826035038)
+  [1m[35m (239.1ms)[0m  [1m[35mCREATE TABLE `microposts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` text, `user_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190826035038_create_microposts.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190826035038')[0m
+  ↳ bin/rails:4
+  [1m[35m (29.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7280963435397412950')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Started GET "/users" for ::1 at 2019-08-26 11:09:59 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 122ms (Views: 116.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/micropost" for ::1 at 2019-08-26 11:10:09 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/micropost"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/microposts" for ::1 at 2019-08-26 11:10:13 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-08-26 11:10:16 +0700
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (22.1ms)
+  Rendered microposts/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 70ms (Views: 62.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 11:10:31 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G/+ZVUIHLCO5o+Fh21EoGHYnOsE1HMaXXhfrVCACblPKEmWAyJNOl8aG6az6qy5k374qIgIPl3VWLOwQU9m1kg==", "micropost"=>{"content"=>"hahahahhaa", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (0.3ms)[0m  [1m[32mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES ('hahahahhaa', 1, '2019-08-26 04:10:31', '2019-08-26 04:10:31')[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/1
+Completed 302 Found in 37ms (ActiveRecord: 31.0ms)
+
+
+Started GET "/microposts/1" for ::1 at 2019-08-26 11:10:32 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/microposts/" for ::1 at 2019-08-26 11:10:37 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/1" for ::1 at 2019-08-26 11:10:40 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/user" for ::1 at 2019-08-26 11:10:44 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"user"}
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Micropost with 'id'=user):
+  
+app/controllers/microposts_controller.rb:67:in `set_micropost'
+Started GET "/microposts/users" for ::1 at 2019-08-26 11:10:47 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 0 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Micropost with 'id'=users):
+  
+app/controllers/microposts_controller.rb:67:in `set_micropost'
+Started GET "/users/1" for ::1 at 2019-08-26 11:11:08 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 11:11:09 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3" for ::1 at 2019-08-26 11:11:10 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 11:11:12 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 11:11:12 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 11:11:13 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 11:11:21 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-08-26 11:11:23 +0700
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.8ms)
+  Rendered microposts/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 11:11:33 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"25crqQLac2848lyDRYQQJpT5HupDoo0d2C9oW+jCLYsKetd8iE4R20fXVE5kfhZaPWAOCXSx3P/QFG8fmxn2Sg==", "micropost"=>{"content"=>"hiihihi 2222", "user_id"=>"3"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (0.4ms)[0m  [1m[32mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES ('hiihihi 2222', 3, '2019-08-26 04:11:33', '2019-08-26 04:11:33')[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (239.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/2
+Completed 302 Found in 245ms (ActiveRecord: 240.5ms)
+
+
+Started GET "/microposts/2" for ::1 at 2019-08-26 11:11:34 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/microposts/2" for ::1 at 2019-08-26 11:11:35 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/" for ::1 at 2019-08-26 11:11:38 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/" for ::1 at 2019-08-26 11:23:32 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MicropostsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.):
+  
+app/models/micropost.rb:2:in `<class:Micropost>'
+app/models/micropost.rb:1:in `<main>'
+app/controllers/microposts_controller.rb:7:in `index'
+Started GET "/microposts" for ::1 at 2019-08-26 11:23:36 +0700
+Processing by MicropostsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.):
+  
+app/models/micropost.rb:2:in `<class:Micropost>'
+app/models/micropost.rb:1:in `<main>'
+app/controllers/microposts_controller.rb:7:in `index'
+Started GET "/microposts" for ::1 at 2019-08-26 11:23:46 +0700
+Processing by MicropostsController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.):
+  
+app/models/micropost.rb:2:in `<class:Micropost>'
+app/models/micropost.rb:1:in `<main>'
+app/controllers/microposts_controller.rb:7:in `index'
+Started GET "/microposts" for ::1 at 2019-08-26 11:24:06 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-08-26 11:24:08 +0700
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.0ms)
+  Rendered microposts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 11:24:16 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pg0cl4gp8ZCAUpShIsOgDcMM2A5ObjRC49BMus+nlZ3v4OBCAr2TJP93nGwDOaZxapXI7Xl9ZaDr60v+vHxOXA==", "micropost"=>{"content"=>"hahahahhahahhahhahadhas;ldsakd;laskd;lasdklasdkasldkasldkasldaksdl;sakdl;sadksal;dksal;d", "user_id"=>"3"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (5.0ms)
+  Rendered microposts/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 11:24:24 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bm7NAP+u8tOoJksliU+av8kNX5HUhvDvMwGnBWhLGIu/xUBbNO8yKrpKsxVUjj1iH97ajnhNBzoQxJtwIeiBAg==", "micropost"=>{"content"=>"hahahahhahihihi tesst", "user_id"=>"3"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (1.9ms)
+  Rendered microposts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 11:24:29 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hvrBktN7pYe0NWITtv/HPXlmljKvbEwsNQaLZ4ySCGc/UUzJGDplfqZZmiNrPmDgr7UTLQOnu/kWw7cSxTGR7g==", "micropost"=>{"content"=>"hihihi tesst", "user_id"=>"3"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (0.4ms)[0m  [1m[32mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES ('hihihi tesst', 3, '2019-08-26 04:24:29', '2019-08-26 04:24:29')[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (44.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/3
+Completed 302 Found in 49ms (ActiveRecord: 44.8ms)
+
+
+Started GET "/microposts/3" for ::1 at 2019-08-26 11:24:29 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMicropost Load (0.7ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 21.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 11:24:33 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1 LIMIT 11[0m
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1 ORDER BY `microposts`.`id` ASC LIMIT 1[0m
+Started GET "/microposts" for ::1 at 2019-08-26 13:35:13 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 43ms (Views: 37.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 13:35:14 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 13:35:16 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 61ms (Views: 54.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 13:35:58 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1 LIMIT 11[0m
+  ↳ /home/tvlam/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered users/index.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Micropost::ActiveRecord_Associations_CollectionProxy:0x00007f29b8073580>
+Did you mean?  connection):
+    23:         <td><%= user.password %></td>
+    24:         <td><%= user.name %></td>
+    25:         <td><%= user.email %></td>
+    26:         <td><%= user.microposts.content %></td>
+    27:         <td><%= link_to 'Show', user %></td>
+    28:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    29:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/users/index.html.erb:26:in `block in _app_views_users_index_html_erb__883336477466417826_69908578846540'
+app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb__883336477466417826_69908578846540'
+Started GET "/" for ::1 at 2019-08-26 13:37:12 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:26
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:26
+  Rendered users/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 13:40:55 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:27
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:27
+  Rendered users/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 13:41:25 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 13:41:48 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-08-26 13:41:51 +0700
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.6ms)
+  Rendered microposts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 13:42:01 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QboWTW4NLX+KuZHuwmp/Dc/4NvhiLnRJMRZJ2ko8VJGQV+qY5JlPy/WcmSPjkHlxZmEmG1U9Jas5LU6eOeePUA==", "micropost"=>{"content"=>"theem moi vo user 1", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (0.3ms)[0m  [1m[32mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES ('theem moi vo user 1', 1, '2019-08-26 06:42:01', '2019-08-26 06:42:01')[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (76.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/4
+Completed 302 Found in 90ms (ActiveRecord: 77.1ms)
+
+
+Started GET "/microposts/4" for ::1 at 2019-08-26 13:42:01 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 13:42:04 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (1.0ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 13:43:23 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-08-26 13:45:11 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 13:45:17 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (1.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (1.2ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/3" for ::1 at 2019-08-26 13:45:19 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:70
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 13:45:21 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 13:45:21 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (1.9ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 70ms (Views: 62.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users" for ::1 at 2019-08-26 13:45:21 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.8ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 13:49:06 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-08-26 13:49:09 +0700
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.8ms)
+  Rendered microposts/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 13:49:12 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u4TpvraPyEL5cCdDka4wr8jDxMp0KJtmNX1YSxmwDddqaRVrPBuq9oZVL46wVDbTYVrUKUM7yoQ9Rl8PamvWFg==", "micropost"=>{"content"=>"", "user_id"=>"3"}, "commit"=>"Create Micropost"}
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (0.3ms)[0m  [1m[32mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES ('', 3, '2019-08-26 06:49:12', '2019-08-26 06:49:12')[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (70.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/5
+Completed 302 Found in 82ms (ActiveRecord: 75.1ms)
+
+
+Started GET "/microposts/5" for ::1 at 2019-08-26 13:49:12 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 13:49:17 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (1.2ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 13:50:25 +0700
+Processing by MicropostsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/tvlam/training/training-rails/app/models/micropost.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...ngth: { maximum:20 },presence :true
+...                              ^):
+  
+app/models/micropost.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/microposts_controller.rb:7:in `index'
+Started GET "/microposts" for ::1 at 2019-08-26 13:50:57 +0700
+Processing by MicropostsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/tvlam/training/training-rails/app/models/micropost.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    presence :true
+             ^):
+  
+app/models/micropost.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/microposts_controller.rb:7:in `index'
+Started GET "/microposts" for ::1 at 2019-08-26 13:50:58 +0700
+Processing by MicropostsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/tvlam/training/training-rails/app/models/micropost.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    presence :true
+             ^):
+  
+app/models/micropost.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/microposts_controller.rb:7:in `index'
+Started GET "/microposts" for ::1 at 2019-08-26 13:51:54 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 13:51:57 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 13:52:03 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-08-26 13:52:03 +0700
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.1ms)
+  Rendered microposts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 13:52:09 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gNLu0WZ079rnqxl/5rJwcvtS660lXmoQmDWgf03hJIRRPxIE7OCNbpiOEbLHSHYOUsv7ThJNO/KQDqc7Pjr/RQ==", "micropost"=>{"content"=>"", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.5ms)
+  Rendered microposts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 60ms (Views: 35.0ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 13:52:16 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9vuP/2H05m5xYxQHnyn57vYO1OcYJJAYzHSOAvgD6kNPUAKkqrUml2MP7DdC6F4zIN1R+LTvZ83vsbJ3saBzyg==", "micropost"=>{"content"=>"dasdasd", "user_id"=>""}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (4.8ms)
+  Rendered microposts/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 56ms (Views: 51.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 13:52:19 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bg1bMY4i2ZJTlt/nKqmGomKcFXSamLHkKooD6HbBuGfXptZqRWMZa0H6J9f3aCF/tE+QazZTRjEJTz+dP2Ih7g==", "micropost"=>{"content"=>"dasdasd", "user_id"=>""}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (5.0ms)
+  Rendered microposts/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts" for ::1 at 2019-08-26 13:52:41 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-08-26 13:52:43 +0700
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.7ms)
+  Rendered microposts/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-08-26 13:52:53 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUUOu8xAIGaqSKqtMWzwTxEUhKJZjQKSZZU4oiIDwyRQqPJuRtRC0tVtomAQlvYzuI2UQW6eU3Btrj/mUdgY5Q==", "micropost"=>{"content"=>"test rensece", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant User::FILL_IN):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/microposts_controller.rb:30:in `block in create'
+app/controllers/microposts_controller.rb:29:in `create'
+Started POST "/microposts" for ::1 at 2019-08-26 13:53:07 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUUOu8xAIGaqSKqtMWzwTxEUhKJZjQKSZZU4oiIDwyRQqPJuRtRC0tVtomAQlvYzuI2UQW6eU3Btrj/mUdgY5Q==", "micropost"=>{"content"=>"test rensece", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.6ms)
+
+
+  
+SyntaxError (/home/tvlam/training/training-rails/app/models/user.rb:3: syntax error, unexpected ':', expecting end
+...  validates FILL_IN, presence : true
+...                              ^):
+  
+app/models/user.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/microposts_controller.rb:30:in `block in create'
+app/controllers/microposts_controller.rb:29:in `create'
+Started POST "/microposts" for ::1 at 2019-08-26 13:53:16 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2fBJv1TiAIa392iVJoR1Omi0ntXfvGgl93vrPAqglEpgW8Tkn6PAf6WbkKX7RdLnvmcbynN3n/DUvtdJQwMNww==", "micropost"=>{"content"=>"test rensece", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/tvlam/training/training-rails/app/models/user.rb:3: syntax error, unexpected ':', expecting end
+...  validates FILL_IN, presence : true
+...                              ^):
+  
+app/models/user.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/microposts_controller.rb:30:in `block in create'
+app/controllers/microposts_controller.rb:29:in `create'
+Started POST "/microposts" for ::1 at 2019-08-26 13:54:16 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2fBJv1TiAIa392iVJoR1Omi0ntXfvGgl93vrPAqglEpgW8Tkn6PAf6WbkKX7RdLnvmcbynN3n/DUvtdJQwMNww==", "micropost"=>{"content"=>"test rensece", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.2ms)
+
+
+  
+NameError (uninitialized constant User::FILL_IN):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/microposts_controller.rb:30:in `block in create'
+app/controllers/microposts_controller.rb:29:in `create'
+Started POST "/microposts" for ::1 at 2019-08-26 13:54:32 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2fBJv1TiAIa392iVJoR1Omi0ntXfvGgl93vrPAqglEpgW8Tkn6PAf6WbkKX7RdLnvmcbynN3n/DUvtdJQwMNww==", "micropost"=>{"content"=>"test rensece", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.3ms)
+
+
+  
+NameError (uninitialized constant User::FILL_IN):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/microposts_controller.rb:30:in `block in create'
+app/controllers/microposts_controller.rb:29:in `create'
+Started POST "/microposts" for ::1 at 2019-08-26 13:55:40 +0700
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2fBJv1TiAIa392iVJoR1Omi0ntXfvGgl93vrPAqglEpgW8Tkn6PAf6WbkKX7RdLnvmcbynN3n/DUvtdJQwMNww==", "micropost"=>{"content"=>"test rensece", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (1.5ms)[0m  [1m[32mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES ('test rensece', 1, '2019-08-26 06:55:40', '2019-08-26 06:55:40')[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (61.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/6
+Completed 302 Found in 95ms (ActiveRecord: 65.7ms)
+
+
+Started GET "/microposts/6" for ::1 at 2019-08-26 13:55:40 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMicropost Load (0.8ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 42.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/microposts/6" for ::1 at 2019-08-26 13:55:42 +0700
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/microposts/" for ::1 at 2019-08-26 13:55:44 +0700
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts`[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-26 13:55:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 08:11:11 +0700
+  [1m[35m (27.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (252.1ms)
+Completed 200 OK in 1154ms (Views: 1072.3ms | ActiveRecord: 32.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 08:13:15 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.8ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (1.1ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 08:13:28 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 08:13:40 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 10:44:08 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 250ms (Views: 239.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 10:46:16 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 10:55:56 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/tvlam/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 86ms (Views: 77.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-27 10:55:57 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:28
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:28
+  Rendered users/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.9ms)
+
+
